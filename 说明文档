@@ -1,0 +1,8 @@
+localStorage仅支持字符串。使用JSON.stringify()和JSON.parse().
+
+var names = [];
+names[0] = prompt("New member name?");
+localStorage.setItem("names", JSON.stringify(names));
+
+//...
+var storedNames = JSON.parse(localStorage.getItem("names"));
